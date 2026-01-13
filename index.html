@@ -1,69 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <title>Login - Controle de Estoque</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f2f2f2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .login-box {
-        background: white;
-        padding: 50px;
-        border-radius: 8px;
-        width: 300px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      input {
-        width: 96%;
-        padding: 8px;
-        margin: 8px 0;
-      }
-      button {
-        width: 102%;
-        padding: 10px;
-        background: #2e86de;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-      .erro {
-        color: red;
-        text-align: center;
-        margin-top: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="login-box">
-      <h2>Controle de Estoque</h2>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-      <input type="text" id="usuario" placeholder="Usuário" />
-      <input type="password" id="senha" placeholder="Senha" />
+<div class="login-box">
+    <h2>Controle de Estoque</h2>
 
-      <button onclick="login()">Entrar</button>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
 
-      <div id="mensagem" class="erro"></div>
-    </div>
+    <button onclick="login()">Entrar</button>
 
-    <script>
-      function login() {
-        const usuario = document.getElementById("usuario").value;
-        const senha = document.getElementById("senha").value;
+    <div id="mensagem" class="erro"></div>
+</div>
 
-          if (usuario === "admin" && senha === "123") {
-              window.location.href = "dashboard.html";
-          } else {
-          document.getElementById("mensagem").innerText =
-            "Usuário ou senha inválidos";
-        }
-      }
-    </script>
-  </body>
+<script src="js/login.js"></script>
+</body>
 </html>
+
+
 
